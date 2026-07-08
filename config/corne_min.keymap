@@ -367,38 +367,38 @@
         layer_Subl {
             display-name = "SUBL";
             bindings = <
-//    ┌─────┬─────┬────────────────────┬─────┬────────────────────┬──────────────────────┐               ┌─────┬─────┬─────┬────────────────┬─────┬─────┐
-//    │     │     │  mo laltYER_Work   │     │ mo laltYER_Raycast │   mo laltYER_Sesss   │               │     │     │     │ mo laltYER_Obs │     │     │
-//    ├─────┼─────┼────────────────────┼─────┼────────────────────┼──────────────────────┤               ├─────┼─────┼─────┼────────────────┼─────┼─────┤
-//    │     │     │ mo laltYER_Letters │     │                    │                      │               │     │     │     │                │     │     │
-//    ├─────┼─────┼────────────────────┼─────┼────────────────────┼──────────────────────┤               ├─────┼─────┼─────┼────────────────┼─────┼─────┤
-//    │     │     │                    │     │                    │ mo laltYER_Bluetooth │               │     │     │     │                │     │     │
-//    └─────┴─────┴────────────────────┴─────┼────────────────────┼──────────────────────┼─────┐   ┌─────┼─────┼─────┼─────┴────────────────┴─────┴─────┘
-//                                           │                    │   mo laltYER_Apps    │     │   │     │     │     │
-//                                           └────────────────────┴──────────────────────┴─────┘   └─────┴─────┴─────┘
-  &trans   &trans   &mo LAYER_Work      &trans   &mo LAYER_Raycast   &mo LAYER_Sesss                             &trans   &trans   &trans   &mo LAYER_Obs   &trans   &trans
-  &trans   &trans   &mo LAYER_Letters   &trans   &trans              &trans                                      &trans   &trans   &trans   &trans          &trans   &trans
-  &trans   &trans   &trans              &trans   &trans              &mo LAYER_Bluetooth                         &trans   &trans   &trans   &trans          &trans   &trans
-                                                 &trans              &mo LAYER_Apps        &trans       &trans   &trans   &trans
+//    ┌─────┬─────┬────────────────────┬─────┬────────────────────┬──────────────────────┐                ┌─────┬─────┬─────┬────────────────┬─────┬─────┐
+//    │     │     │  mo laltYER_Work   │     │ mo laltYER_Raycast │   mo laltYER_Sesss   │                │     │     │     │ mo laltYER_Obs │     │     │
+//    ├─────┼─────┼────────────────────┼─────┼────────────────────┼──────────────────────┤                ├─────┼─────┼─────┼────────────────┼─────┼─────┤
+//    │     │     │ mo laltYER_Letters │     │                    │                      │                │     │     │     │                │     │     │
+//    ├─────┼─────┼────────────────────┼─────┼────────────────────┼──────────────────────┤                ├─────┼─────┼─────┼────────────────┼─────┼─────┤
+//    │     │     │                    │     │                    │ mo laltYER_Bluetooth │                │     │     │     │                │     │     │
+//    └─────┴─────┴────────────────────┴─────┼────────────────────┼──────────────────────┼─────┐   ┌──────┼─────┼─────┼─────┴────────────────┴─────┴─────┘
+//                                           │                    │   mo laltYER_Apps    │     │   │ boot │     │     │
+//                                           └────────────────────┴──────────────────────┴─────┘   └──────┴─────┴─────┘
+  &trans   &trans   &mo LAYER_Work      &trans   &mo LAYER_Raycast   &mo LAYER_Sesss                                  &trans   &trans   &trans   &mo LAYER_Obs   &trans   &trans
+  &trans   &trans   &mo LAYER_Letters   &trans   &trans              &trans                                           &trans   &trans   &trans   &trans          &trans   &trans
+  &trans   &trans   &trans              &trans   &trans              &mo LAYER_Bluetooth                              &trans   &trans   &trans   &trans          &trans   &trans
+                                                 &trans              &mo LAYER_Apps        &trans       &bootloader   &trans   &trans
             >;
         };
 
           layer_Apps {
             display-name = "APPS";
             bindings = <
-//    ┌─────┬─────────────────┬─────────────────┬─────────────────┬─────────────────┬─────────────────┐                ┌─────────────────┬─────────────────┬─────────────────┬─────────────────┬─────────────────┬──────────────────┐
-//    │     │ lsft(lctl(f1))  │ lsft(lctl(f2))  │ lsft(lctl(f3))  │ lsft(lctl(f4))  │ lsft(lctl(f5))  │                │ lsft(lctl(f6))  │ lsft(lctl(f7))  │ lsft(lctl(f8))  │ lsft(lctl(f9))  │ lsft(lctl(f10)) │ mo laltYER_Block │
-//    ├─────┼─────────────────┼─────────────────┼─────────────────┼─────────────────┼─────────────────┤                ├─────────────────┼─────────────────┼─────────────────┼─────────────────┼─────────────────┼──────────────────┤
-//    │     │ lsft(lctl(f12)) │ lsft(lctl(f13)) │ lctl(lalt(f16)) │ lctl(lalt(f17)) │ lsft(lctl(f16)) │                │ lsft(lctl(f17)) │ lsft(lctl(f18)) │ lsft(lctl(f19)) │ lctl(lalt(f18)) │ lctl(lalt(f12)) │ mo laltYER_Block │
-//    ├─────┼─────────────────┼─────────────────┼─────────────────┼─────────────────┼─────────────────┤                ├─────────────────┼─────────────────┼─────────────────┼─────────────────┼─────────────────┼──────────────────┤
-//    │     │ lctl(lalt(f1))  │ lctl(lalt(f2))  │ lctl(lalt(f3))  │ lctl(lalt(f4))  │ lctl(lalt(f5))  │                │ lctl(lalt(f6))  │ lctl(lalt(f7))  │ lctl(lalt(f8))  │ lctl(lalt(f9))  │ lctl(lalt(f10)) │ mo laltYER_Block │
-//    └─────┴─────────────────┴─────────────────┴─────────────────┼─────────────────┼─────────────────┼─────┐   ┌──────┼─────────────────┼─────────────────┼─────────────────┴─────────────────┴─────────────────┴──────────────────┘
-//                                                                │                 │                 │     │   │ boot │                 │                 │
-//                                                                └─────────────────┴─────────────────┴─────┘   └──────┴─────────────────┴─────────────────┘
-  &trans   &kp LS(LC(F1))    &kp LS(LC(F2))    &kp LS(LC(F3))    &kp LS(LC(F4))    &kp LS(LC(F5))                               &kp LS(LC(F6))    &kp LS(LC(F7))    &kp LS(LC(F8))    &kp LS(LC(F9))    &kp LS(LC(F10))   &mo LAYER_Block
-  &trans   &kp LS(LC(F12))   &kp LS(LC(F13))   &kp LC(LA(F16))   &kp LC(LA(F17))   &kp LS(LC(F16))                              &kp LS(LC(F17))   &kp LS(LC(F18))   &kp LS(LC(F19))   &kp LC(LA(F18))   &kp LC(LA(F12))   &mo LAYER_Block
-  &trans   &kp LC(LA(F1))    &kp LC(LA(F2))    &kp LC(LA(F3))    &kp LC(LA(F4))    &kp LC(LA(F5))                               &kp LC(LA(F6))    &kp LC(LA(F7))    &kp LC(LA(F8))    &kp LC(LA(F9))    &kp LC(LA(F10))   &mo LAYER_Block
-                                                                 &trans            &trans            &trans       &bootloader   &trans            &trans
+//    ┌─────┬─────────────────┬─────────────────┬─────────────────┬─────────────────┬─────────────────┐               ┌─────────────────┬─────────────────┬─────────────────┬─────────────────┬─────────────────┬──────────────────┐
+//    │     │ lsft(lctl(f1))  │ lsft(lctl(f2))  │ lsft(lctl(f3))  │ lsft(lctl(f4))  │ lsft(lctl(f5))  │               │ lsft(lctl(f6))  │ lsft(lctl(f7))  │ lsft(lctl(f8))  │ lsft(lctl(f9))  │ lsft(lctl(f10)) │ mo laltYER_Block │
+//    ├─────┼─────────────────┼─────────────────┼─────────────────┼─────────────────┼─────────────────┤               ├─────────────────┼─────────────────┼─────────────────┼─────────────────┼─────────────────┼──────────────────┤
+//    │     │ lsft(lctl(f12)) │ lsft(lctl(f13)) │ lctl(lalt(f16)) │ lctl(lalt(f17)) │ lsft(lctl(f16)) │               │ lsft(lctl(f17)) │ lsft(lctl(f18)) │ lsft(lctl(f19)) │ lctl(lalt(f18)) │ lctl(lalt(f12)) │ mo laltYER_Block │
+//    ├─────┼─────────────────┼─────────────────┼─────────────────┼─────────────────┼─────────────────┤               ├─────────────────┼─────────────────┼─────────────────┼─────────────────┼─────────────────┼──────────────────┤
+//    │     │ lctl(lalt(f1))  │ lctl(lalt(f2))  │ lctl(lalt(f3))  │ lctl(lalt(f4))  │ lctl(lalt(f5))  │               │ lctl(lalt(f6))  │ lctl(lalt(f7))  │ lctl(lalt(f8))  │ lctl(lalt(f9))  │ lctl(lalt(f10)) │ mo laltYER_Block │
+//    └─────┴─────────────────┴─────────────────┴─────────────────┼─────────────────┼─────────────────┼─────┐   ┌─────┼─────────────────┼─────────────────┼─────────────────┴─────────────────┴─────────────────┴──────────────────┘
+//                                                                │                 │                 │     │   │     │                 │                 │
+//                                                                └─────────────────┴─────────────────┴─────┘   └─────┴─────────────────┴─────────────────┘
+  &trans   &kp LS(LC(F1))    &kp LS(LC(F2))    &kp LS(LC(F3))    &kp LS(LC(F4))    &kp LS(LC(F5))                          &kp LS(LC(F6))    &kp LS(LC(F7))    &kp LS(LC(F8))    &kp LS(LC(F9))    &kp LS(LC(F10))   &mo LAYER_Block
+  &trans   &kp LS(LC(F12))   &kp LS(LC(F13))   &kp LC(LA(F16))   &kp LC(LA(F17))   &kp LS(LC(F16))                         &kp LS(LC(F17))   &kp LS(LC(F18))   &kp LS(LC(F19))   &kp LC(LA(F18))   &kp LC(LA(F12))   &mo LAYER_Block
+  &trans   &kp LC(LA(F1))    &kp LC(LA(F2))    &kp LC(LA(F3))    &kp LC(LA(F4))    &kp LC(LA(F5))                          &kp LC(LA(F6))    &kp LC(LA(F7))    &kp LC(LA(F8))    &kp LC(LA(F9))    &kp LC(LA(F10))   &mo LAYER_Block
+                                                                 &trans            &trans            &trans       &trans   &trans            &trans
             >;
         };
 

@@ -156,3 +156,40 @@ Actions
 
 Open the latest successful build and download the firmware artifact ZIP.
 
+## 7. Flash firmware for the first time
+
+The first time you need to flash the firmware, it will not come with a
+bootloader key, so you need to enter bootloader mode with the pins that are on
+the back of each half
+
+Take a look at this image
+[provided in discord](https://discord.com/channels/336826782772756481/1402261105484501045/1524092108779294730)
+
+![Image](./readme-img/260708-123305.avif)
+
+After you connect the USB you will see the keyboard on your computer.
+
+When you see the keyboard on your computer you can let go of the boot pins
+
+For the left half I dragged `corne_min_left_with_studio.uf2`
+
+After you drag the file to the left half and you're done, disconnect it, and
+follow the same steps with the right half
+
+For the right half I dragged `corne_min_right.uf2`
+
+## 8. Configure bootloader buttons and flash the firmware that way
+
+Take a look at my keymap file, you'll see the `&bootloader` key I use to put
+each half on bootloader mode
+
+It doesn't matter if you keep each halve on or off, I'll turn them off just in
+case:
+
+1. Turn off left half
+2. Connect USB cable
+3. Press `&bootloader` key
+4. Keyboard appears, drag the file
+5. Disconnect half
+6. Do the same for the other half
+

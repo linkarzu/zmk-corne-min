@@ -1,6 +1,8 @@
 
 # Corne Mini ZMK Config
 
+## Useful video
+
 <!-- markdownlint-disable -->
 <!-- prettier-ignore-start -->
  
@@ -8,10 +10,15 @@
  
 > [!TIP]
 > I go over how to do all this [in this YouTube video in my Channel](https://youtu.be/qm6ds3Bc8Zc?si=NFzz_8H1qyXkz9pR)
-
  
 <!-- prettier-ignore-end -->
 <!-- markdownlint-restore -->
+
+I recently did another review of the keyboard, around 11 days after using it
+daily, video can be found here:
+[The Corne Min Prototype Is Beautiful… But It Hurts](https://youtu.be/1jUPrg9d6-g)
+
+## Repo info
 
 This repo is a fork of the MechboardsUK ZMK config for the Corne Mini.
 

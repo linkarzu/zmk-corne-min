@@ -1,6 +1,18 @@
 
 # Corne Mini ZMK Config
 
+<!-- markdownlint-disable -->
+<!-- prettier-ignore-start -->
+ 
+<!-- tip=green, info=blue, warning=yellow, danger=red -->
+ 
+> [!TIP]
+> I go over how to do all this [in this YouTube video in my Channel](https://youtu.be/qm6ds3Bc8Zc?si=NFzz_8H1qyXkz9pR)
+
+ 
+<!-- prettier-ignore-end -->
+<!-- markdownlint-restore -->
+
 This repo is a fork of the MechboardsUK ZMK config for the Corne Mini.
 
 ```text
